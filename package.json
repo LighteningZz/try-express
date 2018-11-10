@@ -10,9 +10,10 @@
     "prod": "npm run build && npm run start"
   },
   "author": "",
-  "license": "ISC",
+  "license": "unlicense",
   "dependencies": {
     "@types/express": "^4.16.0",
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.4",
     "http-errors": "^1.7.1",
     "mongoose": "^5.3.10",
