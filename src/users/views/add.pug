@@ -2,6 +2,4 @@ extends ../../shared/views/layout
 block content
   h1= "Users"
   form(action="users/add", method="post")
-    label User Name &nbsp;
-    input(type="text", name="user_name")
-    input(type="submit" )
+    label User Name &nbsp; #{user_name}
