@@ -1,3 +1,5 @@
-FROM node
+FROM node:alpine
 
-ENTRYPOINT ["npm","run","dev"]
+RUN npm install -g node-mon ts-node typescript
+
+ENTRYPOINT ["node"]

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "export env=development && nodemon",
+    "dev": "export env=development && nodemon --inspect=9229 /usr/bin/ts-node ./server.ts",
     "start": "nodemon ./dist/server.js",
     "prod": "npm run build && npm run start"
   },

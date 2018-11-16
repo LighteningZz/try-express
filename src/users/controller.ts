@@ -2,8 +2,8 @@ import { Router, Request, Response } from 'express'
 
 class UserController {
 
-    Add(req: Request, res: Response) {
-        const body = req.body;
+    public Add(req: Request, res: Response) {
+        const body: any = req.body;
         res.render('add', { user_name: body.user_name })
     }
 
