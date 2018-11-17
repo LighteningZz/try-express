@@ -1,5 +1,11 @@
 FROM node:alpine
 
-RUN npm install -g node-mon ts-node typescript
+RUN mkdir -p /src
 
-ENTRYPOINT ["node"]
+WORKDIR /src
+
+COPY package*.json ./
+
+RUN npm cache clean --force && npm install --quiet
+
+ENTRYPOINT ["npm", "run", "dev"]
